@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route,HashRouter } from "react-router-dom";
 import Home from "./Routs/Home";
 import About from "./Routs/About";
 import Service from "./Routs/Service";
@@ -9,7 +9,7 @@ class Tours extends Component {
     render() {
         return (
             <div>
-                <BrowserRouter>
+                <HashRouter>
                     <Routes>
                         <Route path="/" element={<Home />} />
                     </Routes>
@@ -25,7 +25,7 @@ class Tours extends Component {
                     <Routes>
                         <Route path="/login" element={<Login />} />
                     </Routes>
-                </BrowserRouter>
+                </HashRouter>
             </div>
         )
     }
